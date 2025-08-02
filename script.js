@@ -11,7 +11,7 @@ const g = svg.append("g")
 const parseDate = d3.timeParse("%m/%d/%Y");
 fullData = []
 let animationFrame;
-let animationSpeed = 65;
+let animationSpeed = 50;
 let lastFrameTime = null;
 let i = 0;
 let isPaused = true;
@@ -559,7 +559,7 @@ document.getElementById("reset-zoom").addEventListener("click", () => {
       d.date >= currentXDomain[0] && d.date <= currentXDomain[1]
     );
   
-    updateChart(currentData, true); // use animated axis updates if you want
+    updateChart(currentData, true);
 });
 
 document.getElementById("toggle-annotations-btn")
