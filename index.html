@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://unpkg.com/d3-svg-annotation"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CS 416 - Narrative Visualization Project</title>
@@ -9,7 +10,22 @@
 </head>
 <body onload="init()">
     <h1 class="page-header">Nvidia Stock Growth Over the Last Decade</h1>
-    <svg width="800" height="500"></svg>
+    <div class="button-row">
+        <button id="play">▶ Play</button>
+        <button id="pause">⏸ Pause</button>
+        <button id="skip">⏩ Skip</button>
+        <button id="reset">Reset</button>
+        <button id="volume">Toggle Volume Plot</button>
+        <button id="reset-zoom">🔄 Reset Zoom</button>
+        <button id="toggle-annotations-btn">Hide Annotations</button>
+    </div>
+
+    <svg width="1600" height="1000"></svg>
+
+    <div>
+        <h4>Use scroll wheel to zoom in and out.</h4>
+        <h4>Once zoomed in, hover over graph to view candlesticks.</h4>
+    </div>
   <script src="script.js"></script>
 </body>
 </html>
