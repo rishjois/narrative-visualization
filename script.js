@@ -1,7 +1,7 @@
 let nvidia_data = [];
 
 const svg = d3.select("svg")
-const width = +svg.attr("width") - 100;
+const width = +svg.attr("width") - 130;
 const height = +svg.attr("height") - 100;
 const margin = { top: 30, right: 30, bottom: 30, left: 50 };
 
